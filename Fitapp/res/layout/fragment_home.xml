@@ -1,0 +1,217 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_frg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp" >
+
+    <LinearLayout
+        android:id="@+id/line1z"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/button1"
+            style="@style/btnStyleOrange"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create Profile" />
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="match_parent"
+            android:layout_height="60dip" />
+
+        <LinearLayout
+            android:id="@+id/lineo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="4dip"
+            android:layout_marginBottom="4dip"
+            android:layout_marginRight="4dip"
+            android:layout_marginLeft="4dip"
+            android:background="@drawable/dashed_border" >
+
+            <TextView
+                android:id="@+id/duration_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Duration:"
+                android:textSize="20dip" />
+
+            <Chronometer
+                android:id="@+id/chronometer1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="90dip" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line1h"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/line1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/line2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dip"
+            android:layout_marginBottom="4dip"
+            android:layout_marginRight="4dip"
+            android:layout_marginLeft="4dip"
+                android:layout_weight="1"
+                android:background="@drawable/dashed_border"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Speed:" />
+
+                <TextView
+                    android:id="@+id/speed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="0"
+                    android:textSize="60dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="4dip"
+            android:layout_marginBottom="4dip"
+            android:layout_marginRight="4dip"
+            android:layout_marginLeft="4dip"
+                android:layout_weight="1"
+                android:background="@drawable/dashed_border"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/altitudeView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Altitude:" />
+
+                <TextView
+                    android:id="@+id/altitude"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="0"
+                    android:textSize="60dip" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line1b"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/line2b"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="4dip"
+            android:layout_marginBottom="4dip"
+            android:layout_marginRight="4dip"
+            android:layout_marginLeft="4dip"
+                android:layout_weight="1"
+                android:background="@drawable/dashed_border"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/distanceView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Distance:" />
+
+                <TextView
+                    android:id="@+id/distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="0"
+                    android:textSize="60dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line3b"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="4dip"
+            android:layout_marginBottom="4dip"
+            android:layout_marginRight="4dip"
+            android:layout_marginLeft="4dip"
+                android:layout_weight="1"
+                android:background="@drawable/dashed_border"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/energyView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Energy:" />
+
+                <TextView
+                    android:id="@+id/energy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="0"
+                    android:textSize="60dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Start/Stop buttons -->
+
+    <LinearLayout
+        android:id="@+id/line1c"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dip" >
+
+        <Button
+            android:id="@+id/start_button"
+            style="@style/btnStyleOrange"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dip"
+            android:layout_weight="1"
+            android:text="Start" />
+
+        <Button
+            android:id="@+id/stop_button"
+            style="@style/btnStyleOrange"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dip"
+            android:layout_weight="1"
+            android:text="Stop" />
+    </LinearLayout>
+
+</LinearLayout>
